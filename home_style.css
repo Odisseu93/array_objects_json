@@ -1,0 +1,76 @@
+/* declaração de variáveis no CSS
+        Sintaxe: 
+          
+          Exemplo declaração:
+          elemento {
+            --cor-bg-principal: brown;
+          }
+          
+          Exemplo utilização:
+          elemento {
+           background-color: var(--cor-bg-principal);
+          }
+        fonte: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties     */
+
+        :root {
+          --font-size-body: 18px;
+          --default-padding: 10px;
+          --font-size-nav: 16px;
+          --h1-title-font-color: bisque;
+          --nav-bg-color: rgba(248, 116, 93, 0.829);
+          --nav-a-font-color: #000;
+          --nav-a-hover-font-color: var(--h1-title-font-color);
+          font-size: var(--font-size-body);
+          --rounded-corners: 10px
+        }
+  
+        body {
+          background: var(--h1-title-font-color);
+        }
+  
+        .container {
+          max-width: 98%;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          background: tomato;
+          /* CSS Math Functions
+            https://www.w3schools.com/css/css_math_functions.asp */
+          border-radius: calc(var(--rounded-corners) + 10px);
+          padding: 1em;
+          margin: 0 auto;
+        }
+        
+        .h1-title {
+          padding-left: 45px;
+          display: inline-block;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          color: var(--h1-title-font-color);
+        }
+        
+        nav {
+          padding: var(--default-padding);
+          max-width: 500px;
+          margin: 0 auto;
+          border-radius: var(--rounded-corners);
+          background: var(--nav-bg-color);
+          font-size: var(--font-size-nav);
+        }
+  
+        .nav-items li {
+          /* Tipo do marcador ↓ */
+          list-style-type:none;
+          padding: calc(var(--default-padding) /2);
+        }  
+        .nav-items a {
+          display: block;
+          text-decoration: none;
+          color: var(--nav-a-font-color);
+        }
+  
+        .nav-items a:hover {
+          color: var(--nav-a-hover-font-color);
+          text-decoration: underline;
+          transform: scale(1.03);
+        }
