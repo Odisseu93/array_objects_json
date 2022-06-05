@@ -68,6 +68,7 @@ nav {
   height: auto;
   background: #000; 
   border-radius: var(--rounded-corners);
+  padding: var(--default-padding);
 }
 
 .array-var {
