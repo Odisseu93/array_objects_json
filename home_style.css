@@ -18,7 +18,7 @@
           --font-size-nav: 16px;
           --h1-title-font-color: bisque;
           --nav-bg-color: rgba(248, 116, 93, 0.829);
-          --nav-a-font-color: #000;
+          --nav-a-font-color: hsl(228, 45%, 44%);
           --nav-a-hover-font-color: var(--h1-title-font-color);
           font-size: var(--font-size-body);
           --rounded-corners: 10px
