@@ -5,13 +5,14 @@
   --font-size-nav: 16px;
   --h1-title-font-color: bisque;
   --nav-bg-color: rgba(248, 116, 93, 0.829);
-  --nav-a-font-color: #000;
+  --nav-a-font-color: hsl(228, 45%, 44%);
   --nav-a-hover-font-color: var(--h1-title-font-color);
   font-size: var(--font-size-body);
   --rounded-corners: 10px
 }
 
 body {
+  font-size: var(--font-size-body);
   width: 100vw;
   height: 100vh;
   background: var(--h1-title-font-color);
@@ -29,7 +30,8 @@ body {
 /* header */
 nav {
   max-width: 320px;
-  margin: 0 auto;
+  margin: 3em auto;
+  height: auto;
   border-radius: var(--rounded-corners);
   background: var(--nav-bg-color);
   font-size: var(--font-size-nav);
@@ -91,11 +93,22 @@ nav {
   color: yellow;
 }
 
+.liks-url{
+  text-decoration: none;
+  color: var(--nav-a-font-color);
+  padding: 10px;
+}
+
+.liks-url:hover {
+  text-decoration: none;
+  color: var(--h1-title-font-color);  
+}
+
 /* footer */
 .attribution {
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--nav-a-font-color);
 }
