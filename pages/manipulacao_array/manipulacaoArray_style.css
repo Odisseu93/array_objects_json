@@ -11,6 +11,12 @@
   --rounded-corners: 10px
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--h1-title-font-color);
+}
+
 /* div que está gerando o código em HTML */
 .root{ 
   width: 100vw;
@@ -20,21 +26,14 @@
   justify-content: center;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background: var(--h1-title-font-color);
-}
-
+/* header */
 nav {
-  /* padding: var(--default-padding); */
   max-width: 320px;
   margin: 0 auto;
   border-radius: var(--rounded-corners);
   background: var(--nav-bg-color);
   font-size: var(--font-size-nav);
 }
-
 
 .nav-items li {
   /* Tipo do marcador ↓ */
@@ -52,7 +51,8 @@ nav {
   text-decoration: underline;
   transform: scale(1.03);
 }
-  .container {
+
+.container {
   width: 300px;
   height: auto;
   display: flex;
@@ -63,7 +63,6 @@ nav {
   padding: 1em;
   margin: 0 auto;
 }
-
 
 .array-code {
   height: auto;
@@ -90,11 +89,6 @@ nav {
 .brackets {
   color: yellow;
 }
-
-/* .double-quotes {
-  padding-rgi: var(--default-padding);
-} */
-
 
 /* footer */
 .attribution {
