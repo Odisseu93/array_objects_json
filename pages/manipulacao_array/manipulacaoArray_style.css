@@ -96,7 +96,8 @@ nav {
 .liks-url{
   text-decoration: none;
   color: var(--nav-a-font-color);
-  padding: 10px;
+  font-size: var(--font-size-body);
+  margin: 10px auto
 }
 
 .liks-url:hover {
