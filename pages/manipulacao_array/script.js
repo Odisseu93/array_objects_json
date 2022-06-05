@@ -100,7 +100,7 @@ links_title.innerText = "Links interessantes";
 links.setAttribute('class','lisks');
 
 add_url("https://www.w3schools.com/js/js_arrays.asp","JavaScript Arrays");
-add_url("JavaScript Array Methods","JavaScript Array Methods")
+add_url("https://www.w3schools.com/js/js_array_methods.asp","JavaScript Array Methods");
 add_url("https://www.w3schools.com/js/js_array_sort.asp","JavaScript Sorting Arrays");
 add_url("https://www.w3schools.com/js/js_array_iteration.asp","JavaScript Array Iteration");
 add_url("https://www.w3schools.com/js/js_array_const.asp","JavaScript Array Const");
