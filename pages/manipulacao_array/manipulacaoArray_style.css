@@ -1,0 +1,106 @@
+
+:root {
+  --font-size-body: 18px;
+  --default-padding: 10px;
+  --font-size-nav: 16px;
+  --h1-title-font-color: bisque;
+  --nav-bg-color: rgba(248, 116, 93, 0.829);
+  --nav-a-font-color: #000;
+  --nav-a-hover-font-color: var(--h1-title-font-color);
+  font-size: var(--font-size-body);
+  --rounded-corners: 10px
+}
+
+/* div que está gerando o código em HTML */
+.root{ 
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--h1-title-font-color);
+}
+
+nav {
+  /* padding: var(--default-padding); */
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: var(--rounded-corners);
+  background: var(--nav-bg-color);
+  font-size: var(--font-size-nav);
+}
+
+
+.nav-items li {
+  /* Tipo do marcador ↓ */
+  list-style-type:none;
+  padding: calc(var(--default-padding) /2);
+}  
+.nav-items a {
+  display: block;
+  text-decoration: none;
+  color: var(--nav-a-font-color);
+}
+
+.nav-items a:hover {
+  color: tomato;
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+  .container {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: tomato;
+  border-radius: calc(var(--rounded-corners) + 10px);
+  padding: 1em;
+  margin: 0 auto;
+}
+
+
+.array-code {
+  height: auto;
+  background: #000; 
+  border-radius: var(--rounded-corners);
+}
+
+.array-var {
+  color: #4A83B2;
+}
+
+.array-name {
+  color: #8BC2DC;
+}
+
+.equal-sign, .decimal-separator, .semicolon {
+  color: #C7C7C7;
+}
+
+.array-item, .double-quotes {
+  color: darkgreen;
+}
+
+.brackets {
+  color: yellow;
+}
+
+/* .double-quotes {
+  padding-rgi: var(--default-padding);
+} */
+
+
+/* footer */
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
