@@ -30,11 +30,15 @@ body {
 /* header */
 nav {
   max-width: 320px;
-  margin: 3em auto;
+  margin: 30px auto;
   height: auto;
   border-radius: var(--rounded-corners);
   background: var(--nav-bg-color);
   font-size: var(--font-size-nav);
+}
+
+.nav-items {
+  display: block;
 }
 
 .nav-items li {
@@ -63,7 +67,8 @@ nav {
   background: tomato;
   border-radius: calc(var(--rounded-corners) + 10px);
   padding: 1em;
-  margin: 0 auto;
+  margin: auto ;
+  margin-top: 50px;
 }
 
 .array-code {
@@ -106,10 +111,40 @@ nav {
 }
 
 /* footer */
+
+footer {
+  position: relative;
+  margin-top: 5em;
+  bottom: 0;
+}
+
 .attribution {
   text-align: center;
 }
 
 .attribution a {
   color: var(--nav-a-font-color);
+}
+
+.btn-hamburger {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .btn-hamburger {
+    background: var(--h1-title-font-color);
+    display: block;
+    width: 50px;
+    height: 30px;
+  }
+
+  .btn-hamburger:active{
+    background: green;
+  }  
+  .nav-items {
+    display: none;
+  }
+
+ 
+  
 }
