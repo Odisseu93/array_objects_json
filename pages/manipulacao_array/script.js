@@ -87,7 +87,7 @@ tamanhoArray.innerHTML = 'Tamanho do Array: ' + casa.length;
 const links = document.createElement('div');
 
 // função para adicionar os links na div
-function add_url(url , name) {
+function add_url(url, name) {
   links.innerHTML += `<a href=${url} target="_blank" class='liks-url'>
                         ${name}
                       </a><br>`
@@ -97,14 +97,27 @@ function add_url(url , name) {
 
 const links_title = document.createElement('h3');
 links_title.innerText = "Links interessantes";
-links.setAttribute('class','lisks');
+links.setAttribute('class', 'lisks');
 
-add_url("https://www.w3schools.com/js/js_arrays.asp","JavaScript Arrays");
-add_url("https://www.w3schools.com/js/js_array_methods.asp","JavaScript Array Methods");
-add_url("https://www.w3schools.com/js/js_array_sort.asp","JavaScript Sorting Arrays");
-add_url("https://www.w3schools.com/js/js_array_iteration.asp","JavaScript Array Iteration");
-add_url("https://www.w3schools.com/js/js_array_const.asp","JavaScript Array Const");
+add_url("https://www.w3schools.com/js/js_arrays.asp", "JavaScript Arrays");
+add_url("https://www.w3schools.com/js/js_array_methods.asp", "JavaScript Array Methods");
+add_url("https://www.w3schools.com/js/js_array_sort.asp", "JavaScript Sorting Arrays");
+add_url("https://www.w3schools.com/js/js_array_iteration.asp", "JavaScript Array Iteration");
+add_url("https://www.w3schools.com/js/js_array_const.asp", "JavaScript Array Const");
 main.appendChild(links_title);
 main.appendChild(links);
 
+// Botão para ocultar e exibir o menu de navegação no mobile
+const bnt_icon_hamburger = document.querySelector('#btn_hamburger');
+const nav_items = document.querySelector('#nav_items');
 
+bnt_icon_hamburger.addEventListener('click', () => {
+  if (nav_items.style.display === "block") {
+    nav_items.style.display = "none"
+    } else {
+        nav_items.style.display = "block"
+      }
+      
+    });
+    
+    
