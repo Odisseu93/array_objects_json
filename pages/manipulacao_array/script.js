@@ -114,8 +114,10 @@ const nav_items = document.querySelector('#nav_items');
 bnt_icon_hamburger.addEventListener('click', () => {
   if (nav_items.style.display === "block") {
     nav_items.style.display = "none"
+    main.style.opacity="100%"
     } else {
         nav_items.style.display = "block"
+        main.style.opacity="20%"
       }
       
     });
