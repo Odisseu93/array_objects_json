@@ -4,7 +4,7 @@
  <img src="https://www.imagemhost.com.br/images/2022/06/05/image.png" />
 
 
-## [DEPLOYMENT](https://array-objects-json-cgcx4uzop-odisseu93.vercel.app/)
+## [DEPLOYMENT](https://array-objects-json.vercel.app/pages/manipulacao_array/arrays.html)
 </div>
 
 Este repositório foi criado com o fins Didáticos, para armazenar infomações nos seguintes tópicos da linguagem Javascript:
